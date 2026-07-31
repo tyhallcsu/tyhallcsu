@@ -1,0 +1,184 @@
+name: Refresh profile cards
+
+on:
+  push:
+    branches:
+      - main
+      - codex/profile-readme-overhaul
+    paths:
+      - .github/workflows/profile-cards.yml
+      - .github/scripts/generate-public-cards.mjs
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    if: github.repository == 'tyhallcsu/tyhallcsu'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Prepare output directory
+        run: mkdir -p profile
+
+      - name: Install XML validation tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends libxml2-utils
+
+      - name: Generate public stats and language cards
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node .github/scripts/generate-public-cards.mjs
+
+      - name: Generate contribution streak
+        uses: DenverCoder1/github-readme-streak-stats@a028da8aed0700a4d4cbe90f3482c2a2ee6188df
+        with:
+          options: "user=tyhallcsu&disable_animations=true&border_radius=6&background=0D1117&border=30363D&stroke=30363D&ring=58A6FF&fire=8B5CF6&currStreakNum=F0F6FC&sideNums=C9D1D9&currStreakLabel=58A6FF&sideLabels=C9D1D9&dates=8B949E"
+          path: profile/streak.svg
+          token: ${{ github.token }}
+
+      - name: Generate top contributions
+        uses: HwangTaehyun/github-repository-contribution-stats/action@95a90818c685ac6487d10750fbfc42bcdc5ef14f
+        env:
+          GITHUB_PERSONAL_ACCESS_TOKEN: ${{ github.token }}
+        with:
+          username: tyhallcsu
+          output-file: profile/top-contributions.svg
+          combine-all-yearly-contributions: "true"
+          hide-contributor-rank: "false"
+          order-by: contributions
+          limit: "5"
+          theme: dark
+          title-color: 58A6FF
+          text-color: C9D1D9
+          icon-color: 8B5CF6
+          bg-color: 0D1117
+          border-color: 30363D
+          border-radius: "6"
+          hide-title: "true"
+          hide-border: "false"
+          custom-title: Top Contributions
+
+      - name: Disable contribution card animation
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require("node:fs");
+          const file = "profile/top-contributions.svg";
+          let svg = fs.readFileSync(file, "utf8");
+          if (!svg.includes("</style>")) {
+            throw new Error("Contribution card has no style block");
+          }
+          svg = svg.replace(
+            "</style>",
+            ".stagger { opacity: 1 !important; } * { animation: none !important; animation-delay: 0s !important; }</style>",
+          );
+          svg = svg.replace(
+            '<title id="titleId"></title>',
+            '<title id="titleId">Top contributions for sharmanhall</title>',
+          );
+          svg = svg.replace(
+            '<desc id="descId"></desc>',
+            '<desc id="descId">Five public repositories ranked by contribution activity.</desc>',
+          );
+          if (!/<a\b[^>]*>/.test(svg) || !/<\/a>\s*<\/svg>\s*$/.test(svg)) {
+            throw new Error("Contribution card attribution wrapper changed");
+          }
+          svg = svg.replace(/<a\b[^>]*>/, "");
+          svg = svg.replace(/<\/a>\s*(<\/svg>\s*)$/, "$1");
+          fs.writeFileSync(file, svg);
+          NODE
+
+      - name: Normalize generated card whitespace
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require("node:fs");
+          const files = [
+            "profile/stats.svg",
+            "profile/top-langs.svg",
+            "profile/streak.svg",
+            "profile/top-contributions.svg",
+          ];
+          for (const file of files) {
+            const svg = fs
+              .readFileSync(file, "utf8")
+              .replace(/[ \t]+$/gm, "")
+              .trimEnd();
+            fs.writeFileSync(file, `${svg}\n`);
+          }
+          NODE
+
+      - name: Validate generated cards
+        shell: bash
+        run: |
+          set -euo pipefail
+          files=(
+            profile/stats.svg
+            profile/top-langs.svg
+            profile/streak.svg
+            profile/top-contributions.svg
+          )
+
+          for file in "${files[@]}"; do
+            test -s "$file"
+            xmllint --noout "$file"
+
+            if grep -Eiq \
+              'Something went wrong|Failed to fetch|<script|<foreignObject|<!DOCTYPE|<!ENTITY|javascript:|@import|<animate' \
+              "$file"; then
+              echo "Invalid or unsafe generated card: $file"
+              exit 1
+            fi
+
+            if grep -Eiq \
+              "<(a|image|use)[^>]+(href|xlink:href)=[\"']https?://" \
+              "$file"; then
+              echo "Remote SVG navigation or resource detected: $file"
+              exit 1
+            fi
+          done
+
+      - name: Commit refreshed cards
+        shell: bash
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+
+          if [[ "$GITHUB_REF_TYPE" != "branch" ]]; then
+            echo "Card updates require a branch ref."
+            exit 1
+          fi
+
+          git add -- \
+            profile/stats.svg \
+            profile/top-langs.svg \
+            profile/streak.svg \
+            profile/top-contributions.svg
+
+          if git diff --cached --quiet; then
+            echo "Cards are already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(profile): refresh activity cards"
+          git pull --rebase origin "$TARGET_BRANCH"
+          git push origin "HEAD:refs/heads/$TARGET_BRANCH"
