@@ -43,7 +43,7 @@ an emphasis on local processing, inspectable outputs, and deliberate guardrails.
 <p align="center">
   <img
     src="./profile/top-langs.svg"
-    alt="Most-used public repository languages for sharmanhall"
+    alt="Top primary languages across public source repositories for sharmanhall"
   >
 </p>
 

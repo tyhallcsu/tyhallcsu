@@ -7,6 +7,7 @@ on:
       - codex/profile-readme-overhaul
     paths:
       - .github/workflows/profile-cards.yml
+      - .github/scripts/generate-public-cards.mjs
   schedule:
     - cron: "17 3 * * *"
   workflow_dispatch:
@@ -34,25 +35,10 @@ jobs:
       - name: Prepare output directory
         run: mkdir -p profile
 
-      - name: Generate GitHub stats
-        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e
-        with:
-          card: stats
-          options: "username=tyhallcsu&show_icons=true&include_all_commits=true&count_private=false&hide_rank=true&disable_animations=true&border_radius=6&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=8B5CF6&border_color=30363D&custom_title=sharmanhall%27s%20GitHub%20Stats"
-          path: profile/stats.svg
-          token: ${{ github.token }}
-          core_version: 2.1.3
-          fail_on_error: "true"
-
-      - name: Generate language card
-        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e
-        with:
-          card: top-langs
-          options: "username=tyhallcsu&layout=compact&langs_count=6&disable_animations=true&border_radius=6&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&border_color=30363D&custom_title=Top%20Languages"
-          path: profile/top-langs.svg
-          token: ${{ github.token }}
-          core_version: 2.1.3
-          fail_on_error: "true"
+      - name: Generate public stats and language cards
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node .github/scripts/generate-public-cards.mjs
 
       - name: Generate contribution streak
         uses: DenverCoder1/github-readme-streak-stats@a028da8aed0700a4d4cbe90f3482c2a2ee6188df

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 190" width="495" height="190" role="img" aria-labelledby="stats-title stats-desc">
+  <title id="stats-title">sharmanhall GitHub stats</title>
+  <desc id="stats-desc">Public source repositories, stars, forks, and followers for sharmanhall.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .title { fill: #58A6FF; font-size: 20px; font-weight: 700; }
+    .value { fill: #F0F6FC; font-size: 24px; font-weight: 700; }
+    .label { fill: #8B949E; font-size: 13px; font-weight: 500; }
+  </style>
+  <rect x="0.5" y="0.5" width="494" height="189" rx="6" fill="#0D1117" stroke="#30363D"/>
+  <text class="title" x="25" y="35">sharmanhall&apos;s GitHub Stats</text>
+  <path d="M25 52H470" stroke="#30363D"/>
+  <path d="M247.5 67V170" stroke="#30363D" stroke-opacity=".7"/>
+    <g transform="translate(28 91)">
+      <text class="value" x="0" y="0">27</text>
+      <text class="label" x="0" y="24">Public projects</text>
+    </g>
+    <g transform="translate(270 91)">
+      <text class="value" x="0" y="0">30</text>
+      <text class="label" x="0" y="24">Stars earned</text>
+    </g>
+    <g transform="translate(28 155)">
+      <text class="value" x="0" y="0">10</text>
+      <text class="label" x="0" y="24">Repository forks</text>
+    </g>
+    <g transform="translate(270 155)">
+      <text class="value" x="0" y="0">53</text>
+      <text class="label" x="0" y="24">Followers</text>
+    </g>
+</svg>
