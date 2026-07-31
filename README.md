@@ -1,28 +1,104 @@
-# 💫 About Me:
-👋 About Me<br>I'm a developer who automates workflows, enhances user experiences, and builds efficient scripts. <br><br>I specialize in:<br>⚙️ Automation: Creating scripts to streamline tasks<br>💻 Userscripts & Extensions: Developing tools to improve website functionality<br>🔧 Open Source: Contributing to projects that boost performance and add features<br><br>I'm always learning and experimenting with Python, JavaScript, and Bash. <br>Feel free to explore my repos or reach out to collaborate!
+# sharmanhall
 
+![sharmanhall — Practical automation for real-world workflows.](./assets/profile-hero.svg)
 
-## 🌐 Socials:
-[![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/sharmanhall) [![Codepen](https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/sharmanhall) 
+I build practical browser, macOS, WordPress, and AI-connected automation, with
+an emphasis on local processing, inspectable outputs, and deliberate guardrails.
 
-# 💻 Tech Stack:
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white) ![DigitalOcean](https://img.shields.io/badge/DigitalOcean-%230167ff.svg?style=for-the-badge&logo=digitalOcean&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![GithubPages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white) ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=for-the-badge&logo=adobe&logoColor=white) ![Adobe Illustrator](https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white) ![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![Bitbucket](https://img.shields.io/badge/bitbucket-%230047B3.svg?style=for-the-badge&logo=bitbucket&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white) ![CMake](https://img.shields.io/badge/CMake-%23008FBA.svg?style=for-the-badge&logo=cmake&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Plex](https://img.shields.io/badge/plex-%23E5A00D.svg?style=for-the-badge&logo=plex&logoColor=white) ![TOR](https://img.shields.io/badge/tor-%237E4798.svg?style=for-the-badge&logo=tor-project&logoColor=white) ![Raspberry Pi](https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=tyhallcsu&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=tyhallcsu&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=tyhallcsu&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+[![X: @sharmanhall](https://img.shields.io/badge/X-%40sharmanhall-111111?style=flat-square&logo=x&logoColor=white)](https://x.com/sharmanhall)
+[![CodePen: sharmanhall](https://img.shields.io/badge/CodePen-sharmanhall-111111?style=flat-square&logo=codepen&logoColor=white)](https://codepen.io/sharmanhall)
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+## Tech stack
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=tyhallcsu&limit=5&theme=dark&combine_all_yearly_contributions=true)
+### Languages
 
----
-[![](https://visitcount.itsvg.in/api?id=tyhallcsu&icon=0&color=8)](https://visitcount.itsvg.in)
+[![JavaScript](https://img.shields.io/badge/JavaScript-20232a?style=flat-square&logo=javascript&logoColor=F7DF1E)](https://github.com/tyhallcsu?tab=repositories&q=&type=source&language=javascript)
+[![PHP](https://img.shields.io/badge/PHP-20232a?style=flat-square&logo=php&logoColor=777BB4)](https://github.com/tyhallcsu?tab=repositories&q=&type=source&language=php)
+[![Python](https://img.shields.io/badge/Python-20232a?style=flat-square&logo=python&logoColor=3776AB)](https://github.com/tyhallcsu?tab=repositories&q=&type=source&language=python)
+[![Shell](https://img.shields.io/badge/Shell-20232a?style=flat-square&logo=gnubash&logoColor=4EAA25)](https://github.com/tyhallcsu?tab=repositories&q=&type=source&language=shell)
+[![Swift](https://img.shields.io/badge/Swift-20232a?style=flat-square&logo=swift&logoColor=F05138)](https://github.com/tyhallcsu?tab=repositories&q=&type=source&language=swift)
+[![HTML and CSS](https://img.shields.io/badge/HTML%20%2F%20CSS-20232a?style=flat-square&logo=html5&logoColor=E34F26)](https://github.com/tyhallcsu?tab=repositories&type=source)
 
-  ## 💰 You can help me by Donating
-  [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/sharmanhall) [![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://patreon.com/sharmanhall) [![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/sharmanhall) 
+### Platforms and data
 
-  
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+[![WordPress](https://img.shields.io/badge/WordPress-20232a?style=flat-square&logo=wordpress&logoColor=21759B)](https://github.com/tyhallcsu/ai-site-connector)
+[![Chrome Manifest V3](https://img.shields.io/badge/Chrome%20Manifest%20V3-20232a?style=flat-square&logo=googlechrome&logoColor=4285F4)](https://github.com/tyhallcsu/messages-saver-open-source)
+[![macOS](https://img.shields.io/badge/macOS-20232a?style=flat-square&logo=apple&logoColor=F5F5F7)](https://github.com/tyhallcsu/macwhisper-transcription-automation)
+[![SQLite](https://img.shields.io/badge/SQLite-20232a?style=flat-square&logo=sqlite&logoColor=4DB6E2)](https://github.com/tyhallcsu/imessage-unsent)
+
+### Interfaces and delivery
+
+[![REST APIs](https://img.shields.io/badge/REST%20APIs-20232a?style=flat-square&color=167D9A)](https://github.com/tyhallcsu/ai-site-connector)
+[![Model Context Protocol](https://img.shields.io/badge/MCP-20232a?style=flat-square&color=7C5CFC)](https://github.com/tyhallcsu/ai-site-connector)
+[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-20232a?style=flat-square&logo=githubactions&logoColor=2088FF)](https://github.com/tyhallcsu?tab=repositories&type=source)
+[![Git](https://img.shields.io/badge/Git-20232a?style=flat-square&logo=git&logoColor=F05032)](https://github.com/tyhallcsu?tab=repositories&type=source)
+
+## GitHub activity
+
+<!-- markdownlint-disable MD033 -->
+<p align="center">
+  <img src="./profile/stats.svg" alt="GitHub stats for sharmanhall">
+</p>
+
+<p align="center">
+  <img
+    src="./profile/top-langs.svg"
+    alt="Most-used public repository languages for sharmanhall"
+  >
+</p>
+
+<p align="center">
+  <img src="./profile/streak.svg" alt="GitHub contribution streak for sharmanhall">
+</p>
+<!-- markdownlint-enable MD033 -->
+
+Cards refresh daily from public GitHub data.
+
+### Top contributions
+
+<!-- markdownlint-disable MD033 -->
+<p align="center">
+  <img
+    src="./profile/top-contributions.svg"
+    alt="Top public repository contributions for sharmanhall"
+  >
+</p>
+<!-- markdownlint-enable MD033 -->
+
+## Selected work
+
+- **[AI Site Connector][ai-site-connector]** — Connects AI coding tools to
+  self-hosted WordPress with core Application Passwords, a conservative operator
+  role, permission-gated REST and MCP tools, audit logging, tests, and release
+  ZIP packaging.
+- **[Open Chat Archiver][open-chat-archiver]** — Exports conversations already
+  rendered in Facebook or Messenger to local JSON, CSV, TXT, or HTML files
+  through a dependency-free Manifest V3 extension with scoped permissions and
+  CI checks for disallowed network APIs.
+- **[MacWhisper Transcription Automation][macwhisper]** — Sends Apple Notes call
+  recordings through a macOS Shortcut to local MacWhisper or whisper.cpp
+  transcription, saves timestamped job-folder transcripts, and returns
+  Notes-ready plaintext.
+- **[iMessage Unsent][imessage-unsent]** — For authorized analysis of your own
+  Mac, snapshots Messages data and examines SQLite WAL evidence without writing
+  to the live database; recovery is time-sensitive, best-effort, and subject to
+  applicable law and consent.
+- **[GMB OSINT][gmb-osint]** — Turns Google Search knowledge panels into a local
+  workbench for business identifiers, useful links, and JSON, CSV, or Markdown
+  exports without an API key or third-party calls.
+- **[Spotify Multi-Account Switcher][spotify-switcher]** — Switches between saved
+  local Spotify profile states on macOS using existing session data rather than
+  storing account passwords. Saved profiles still contain session tokens and
+  should be protected.
+
+## Support my work
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=111111)](https://buymeacoffee.com/sharmanhall)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white)](https://ko-fi.com/sharmanhall)
+
+[ai-site-connector]: https://github.com/tyhallcsu/ai-site-connector
+[gmb-osint]: https://github.com/tyhallcsu/gmb-osint
+[imessage-unsent]: https://github.com/tyhallcsu/imessage-unsent
+[macwhisper]: https://github.com/tyhallcsu/macwhisper-transcription-automation
+[open-chat-archiver]: https://github.com/tyhallcsu/messages-saver-open-source
+[spotify-switcher]: https://github.com/tyhallcsu/spotify-multi-account-switcher
