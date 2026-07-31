@@ -86,8 +86,21 @@ jobs:
           }
           svg = svg.replace(
             "</style>",
-            "* { animation: none !important; animation-delay: 0s !important; }</style>",
+            ".stagger { opacity: 1 !important; } * { animation: none !important; animation-delay: 0s !important; }</style>",
           );
+          svg = svg.replace(
+            '<title id="titleId"></title>',
+            '<title id="titleId">Top contributions for sharmanhall</title>',
+          );
+          svg = svg.replace(
+            '<desc id="descId"></desc>',
+            '<desc id="descId">Five public repositories ranked by contribution activity.</desc>',
+          );
+          if (!/<a\b[^>]*>/.test(svg) || !/<\/a>\s*<\/svg>\s*$/.test(svg)) {
+            throw new Error("Contribution card attribution wrapper changed");
+          }
+          svg = svg.replace(/<a\b[^>]*>/, "");
+          svg = svg.replace(/<\/a>\s*(<\/svg>\s*)$/, "$1");
           fs.writeFileSync(file, svg);
           NODE
 
@@ -114,9 +127,9 @@ jobs:
             fi
 
             if grep -Eiq \
-              "<(image|use)[^>]+(href|xlink:href)=[\"']https?://" \
+              "<(a|image|use)[^>]+(href|xlink:href)=[\"']https?://" \
               "$file"; then
-              echo "Remote image resource detected: $file"
+              echo "Remote SVG navigation or resource detected: $file"
               exit 1
             fi
           done

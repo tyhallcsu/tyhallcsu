@@ -9,11 +9,9 @@
         role="img"
         aria-labelledby="descId"
       >
-        <a xlink:href="https://github.com/HwangTaehyun/github-contributor-stats" 
-        xlink:title="github-contributor-stats(new tab)"
-        target="_blank">
-          <title id="titleId"></title>
-          <desc id="descId"></desc>
+        
+          <title id="titleId">Top contributions for sharmanhall</title>
+          <desc id="descId">Five public repositories ranked by contribution activity.</desc>
           <style>
             .header {
               font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -94,7 +92,7 @@
     }
   
             
-          * { animation: none !important; animation-delay: 0s !important; }</style>
+          .stagger { opacity: 1 !important; } * { animation: none !important; animation-delay: 0s !important; }</style>
 
           
 
@@ -261,6 +259,5 @@
     </svg>
   
           </g>
-        </a>
-      </svg>
+        </svg>
     
