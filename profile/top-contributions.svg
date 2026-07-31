@@ -9,7 +9,7 @@
         role="img"
         aria-labelledby="descId"
       >
-        
+
           <title id="titleId">Top contributions for sharmanhall</title>
           <desc id="descId">Five public repositories ranked by contribution activity.</desc>
           <style>
@@ -27,7 +27,7 @@
               /* Selector detects Firefox */
               .header { font-size: 15.5px; }
             }
-            
+
     .stat {
       font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #C9D1D9;
     }
@@ -40,27 +40,27 @@
       animation: fadeInAnimation 0.3s ease-in-out forwards;
     }
     .rank-text {
-      font: 800 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #C9D1D9; 
+      font: 800 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #C9D1D9;
       animation: scaleInAnimation 0.3s ease-in-out forwards;
     }
     .contribution-rank-text {
-      font: 800 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: rgb(0, 128, 255); 
+      font: 800 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: rgb(0, 128, 255);
       animation: scaleInAnimation 0.3s ease-in-out forwards;
     }
-    
+
     .bold { font-weight: 700 }
     .icon {
       fill: #8B5CF6;
       display: block;
     }
-    
+
     .rank-circle-rim {
       stroke: #58A6FF;
       fill: none;
       stroke-width: 3;
       opacity: 0.2;
     }
-    
+
     @keyframes rankAnimation {
       from {
         stroke-dashoffset: 251.32741228718345;
@@ -69,10 +69,10 @@
         stroke-dashoffset: 248.8141381643116;
       }
     }
-  
-  
 
-            
+
+
+
     /* Animations */
     @keyframes scaleInAnimation {
       from {
@@ -90,11 +90,11 @@
         opacity: 1;
       }
     }
-  
-            
+
+
           .stagger { opacity: 1 !important; } * { animation: none !important; animation-delay: 0s !important; }</style>
 
-          
+
 
           <rect
             data-testid="card-bg"
@@ -107,13 +107,13 @@
             fill="#0D1117"
             stroke-opacity="1"
           />
-          
-          
+
+
           <g
             data-testid="main-card-body"
             transform="translate(0, 25)"
           >
-            
+
     <svg overflow="visible">
       <g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms" transform="translate(25, 0)">
@@ -126,7 +126,7 @@
       <g transform="translate(30,16)">
         <text class="stat bold">imessage-unsent</text>
       </g>
-      
+
     <g data-testid="rank-circle" transform="translate(235, 0)">
       <circle class="rank-circle-rim" cx="12.5" cy="12.5" r="14" />
       <g class="rank-text"><text x="4" y="18.5">
@@ -141,7 +141,7 @@
        </text>
       </g>
     </g>
-    
+
     </g>
   </g><g transform="translate(0, 33)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -154,7 +154,7 @@
       <g transform="translate(30,16)">
         <text class="stat bold">ai-site-connector</text>
       </g>
-      
+
     <g data-testid="rank-circle" transform="translate(235, 0)">
       <circle class="rank-circle-rim" cx="12.5" cy="12.5" r="14" />
       <g class="rank-text"><text x="4" y="18.5">
@@ -169,7 +169,7 @@
        </text>
       </g>
     </g>
-    
+
     </g>
   </g><g transform="translate(0, 66)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -182,7 +182,7 @@
       <g transform="translate(30,16)">
         <text class="stat bold">big-eazy-spindisplay</text>
       </g>
-      
+
     <g data-testid="rank-circle" transform="translate(235, 0)">
       <circle class="rank-circle-rim" cx="12.5" cy="12.5" r="14" />
       <g class="rank-text"><text x="4" y="18.5">
@@ -197,7 +197,7 @@
        </text>
       </g>
     </g>
-    
+
     </g>
   </g><g transform="translate(0, 99)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -210,7 +210,7 @@
       <g transform="translate(30,16)">
         <text class="stat bold">rarbg-enhancer</text>
       </g>
-      
+
     <g data-testid="rank-circle" transform="translate(235, 0)">
       <circle class="rank-circle-rim" cx="12.5" cy="12.5" r="14" />
       <g class="rank-text"><text x="4" y="18.5">
@@ -225,7 +225,7 @@
        </text>
       </g>
     </g>
-    
+
     </g>
   </g><g transform="translate(0, 132)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
@@ -238,7 +238,7 @@
       <g transform="translate(30,16)">
         <text class="stat bold">macwhisper-transcription-automation</text>
       </g>
-      
+
     <g data-testid="rank-circle" transform="translate(309.58125, 0)">
       <circle class="rank-circle-rim" cx="12.5" cy="12.5" r="14" />
       <g class="rank-text"><text x="4" y="18.5">
@@ -253,11 +253,10 @@
        </text>
       </g>
     </g>
-    
+
     </g>
   </g>
     </svg>
-  
+
           </g>
         </svg>
-    

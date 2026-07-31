@@ -104,6 +104,26 @@ jobs:
           fs.writeFileSync(file, svg);
           NODE
 
+      - name: Normalize generated card whitespace
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require("node:fs");
+          const files = [
+            "profile/stats.svg",
+            "profile/top-langs.svg",
+            "profile/streak.svg",
+            "profile/top-contributions.svg",
+          ];
+          for (const file of files) {
+            const svg = fs
+              .readFileSync(file, "utf8")
+              .replace(/[ \t]+$/gm, "")
+              .trimEnd();
+            fs.writeFileSync(file, `${svg}\n`);
+          }
+          NODE
+
       - name: Validate generated cards
         shell: bash
         run: |
