@@ -14,31 +14,37 @@
   <g transform="translate(25 88)">
     <text class="language" x="0" y="0">JavaScript</text>
     <rect x="145" y="-9" width="250" height="9" rx="4.5" fill="#30363D"/>
-    <rect x="145" y="-9" width="140.63" height="9" rx="4.5" fill="#58A6FF"/>
+    <rect x="145" y="-9" width="132.35" height="9" rx="4.5" fill="#58A6FF"/>
     <text class="count" x="445" y="0" text-anchor="end">9</text>
   </g>
   <g transform="translate(25 115)">
     <text class="language" x="0" y="0">Shell</text>
     <rect x="145" y="-9" width="250" height="9" rx="4.5" fill="#30363D"/>
-    <rect x="145" y="-9" width="46.88" height="9" rx="4.5" fill="#6D8BFF"/>
+    <rect x="145" y="-9" width="44.12" height="9" rx="4.5" fill="#6D8BFF"/>
     <text class="count" x="445" y="0" text-anchor="end">3</text>
   </g>
   <g transform="translate(25 142)">
     <text class="language" x="0" y="0">Python</text>
     <rect x="145" y="-9" width="250" height="9" rx="4.5" fill="#30363D"/>
-    <rect x="145" y="-9" width="31.25" height="9" rx="4.5" fill="#7C6FF6"/>
+    <rect x="145" y="-9" width="29.41" height="9" rx="4.5" fill="#7C6FF6"/>
     <text class="count" x="445" y="0" text-anchor="end">2</text>
   </g>
   <g transform="translate(25 169)">
     <text class="language" x="0" y="0">HTML</text>
     <rect x="145" y="-9" width="250" height="9" rx="4.5" fill="#30363D"/>
-    <rect x="145" y="-9" width="15.63" height="9" rx="4.5" fill="#8B5CF6"/>
+    <rect x="145" y="-9" width="14.71" height="9" rx="4.5" fill="#8B5CF6"/>
     <text class="count" x="445" y="0" text-anchor="end">1</text>
   </g>
   <g transform="translate(25 196)">
     <text class="language" x="0" y="0">PHP</text>
     <rect x="145" y="-9" width="250" height="9" rx="4.5" fill="#30363D"/>
-    <rect x="145" y="-9" width="15.63" height="9" rx="4.5" fill="#4E9FD1"/>
+    <rect x="145" y="-9" width="14.71" height="9" rx="4.5" fill="#4E9FD1"/>
+    <text class="count" x="445" y="0" text-anchor="end">1</text>
+  </g>
+  <g transform="translate(25 223)">
+    <text class="language" x="0" y="0">TypeScript</text>
+    <rect x="145" y="-9" width="250" height="9" rx="4.5" fill="#30363D"/>
+    <rect x="145" y="-9" width="14.71" height="9" rx="4.5" fill="#7AA2F7"/>
     <text class="count" x="445" y="0" text-anchor="end">1</text>
   </g>
 </svg>

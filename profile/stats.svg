@@ -12,7 +12,7 @@
   <path d="M25 52H470" stroke="#30363D"/>
   <path d="M247.5 67V170" stroke="#30363D" stroke-opacity=".7"/>
     <g transform="translate(28 91)">
-      <text class="value" x="0" y="0">27</text>
+      <text class="value" x="0" y="0">28</text>
       <text class="label" x="0" y="24">Public projects</text>
     </g>
     <g transform="translate(270 91)">
@@ -24,7 +24,7 @@
       <text class="label" x="0" y="24">Repository forks</text>
     </g>
     <g transform="translate(270 155)">
-      <text class="value" x="0" y="0">55</text>
+      <text class="value" x="0" y="0">56</text>
       <text class="label" x="0" y="24">Followers</text>
     </g>
 </svg>
